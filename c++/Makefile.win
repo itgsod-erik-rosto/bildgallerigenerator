@@ -26,5 +26,5 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CPP) $(LINKOBJ) -o "Project1.exe" $(LIBS)
 
-main.o: main.cpp C:/Dev-Cpp/include/c++/3.4.2/cstdlib   C:/Dev-Cpp/include/c++/3.4.2/iostream
+main.o: main.cpp C:/Dev-Cpp/include/c++/3.4.2/cstdlib   C:/Dev-Cpp/include/c++/3.4.2/iostream   C:/Dev-Cpp/include/c++/3.4.2/fstream C:/Dev-Cpp/include/dirent.h   C:/Dev-Cpp/include/io.h
 	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
