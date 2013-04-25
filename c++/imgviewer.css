@@ -1,0 +1,34 @@
+body
+{
+background-color: black;
+}
+
+img
+{
+margin-left: 7px; 
+border-style: outset;
+border-width: 3px;
+border-color: white;
+}
+
+img:hover
+{
+border-style: outset;
+border-width: 4mpx;
+postion: absolute; 
+width: 92px;
+height: 92px;
+border-color: blue;
+}
+
+div#images
+{
+position: absolute;
+align: center;
+top: 150px;
+left: 50%; 
+width: 220px; 
+background-color: rgb(10, 10, 10);
+border-style: solid; border-color: rgb(25, 25, 25); border-width: 2px; 
+}
+

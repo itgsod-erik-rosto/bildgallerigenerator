@@ -1,11 +1,11 @@
 [Project]
 FileName=Project1.dev
 Name=Project1
-UnitCount=1
+UnitCount=2
 Type=1
 Ver=1
 ObjFiles=
-Includes=
+Includes=C:\Users\erik.rosto\Desktop\UtterCore\Programmering\bildgallerigenerator\c++
 Libs=
 PrivateResource=
 ResourceIncludes=
@@ -18,7 +18,7 @@ Icon=
 ExeOutput=
 ObjectOutput=
 OverrideOutput=0
-OverrideOutputName=
+OverrideOutputName=Project1.exe
 HostApplication=
 Folders=
 CommandLine=
@@ -27,7 +27,7 @@ CustomMakefile=
 IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
-CompilerSettings=
+CompilerSettings=0000000000000100000000
 
 [Unit1]
 FileName=main.cpp
@@ -56,4 +56,14 @@ OriginalFilename=
 ProductName=
 ProductVersion=
 AutoIncBuildNr=0
+
+[Unit2]
+FileName=htmlcss.h
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
 
