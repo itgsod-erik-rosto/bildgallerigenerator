@@ -45,8 +45,12 @@ int main(int argc, char *argv[])
     << "<head>" << endl
     << "<title>Image viewer</title>" << endl
     << "<LINK href='imgviewer.css' rel='stylesheet' type='text/css'>" << endl 
+    << "<div id='Head'>" << endl
+    << "<h1 id='lrgtxt'>Image viewer<h1><p id='cooldot'>.<p>" << endl
+    << "</div>" << endl
     << "</head>" << endl
     << "<body>" << endl
+    
     << "<div id='images'>" << endl;
 
 cout << "Enter the path to the folder that contains the images: " << endl;
@@ -91,7 +95,7 @@ cout << endl;
     html << img[i];
     html << " 'alt='" << indx << "' height='92' width='92' title='" 
     << img[i];
-    html << "'> </a>" << endl;
+    html << "'></a>" << endl;
     
     indx++;
 }             
@@ -102,8 +106,12 @@ cout << endl;
 } 
 cout << endl;
       
-    }     
+    }
+    
+         
     html << "</div>" << endl;
+    html << "<p id='imgamount'> "<< indx+1 << " images. </p> "<< endl;
+    
     html << "</body>" 
     << "</html>";
     html.close();
