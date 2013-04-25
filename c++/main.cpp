@@ -33,8 +33,11 @@ int main(int argc, char *argv[])
 
 
 {
+    // Denna funktion skapar CSS-dokumentet och skriver i all CSS som ska användas där.
     CSS();
-    while (img[i]!="exit")
+    
+    //Här skapas första halvan av HTML-dokumentet.
+    while (img[i]!="exit") // Skriver användaren "exit" ska programmet stängas ner närsomhelst.
     {
     ofstream html;
     html.open("imgviewer.html");
@@ -57,27 +60,28 @@ cout << endl;
 cout << endl;
 
 
+
     DIR *dir = opendir(direc); 
     if(dir) 
     { 
         struct dirent *ent;
-        
+//En loop som läser igenom mappen som användaren har valt och skriver ut alla filer som finns där i.        
         while((ent = readdir(dir)) != NULL) 
         {
                    i1++;
                    
                     
-                          
-                   if (ent->d_name[0]!=*".")//(ent->d_name[i1]==*"p" && ent->d_name[i1+1]==*"n")//(ent->d_name[i1]==*"p" && ent->d_name[i1+1]==*"n" && ent->d_name[i1+2]==*"g" && ent->d_name[i1+3]==*"")
+                          //Den ignorerar filen i mappen om första bokstaven är "." för att undvika att få med sånt som inte är bilder.
+                   if (ent->d_name[0]!=*".")
                    {         
                              
                              cout << ent->d_name << " " << i1;
                              cout << endl;
                            img_a++;
-    
+    //Lägger till filen i en array där bildernas namn läggs.
     img[i]=ent->d_name;
-
     html << "<a href='"
+    //HTML dokumentets bilder länkar till bilderna i mappen som användaren valde.
     << direc << "/" << img[i]
     << "'> <img src='";
     
