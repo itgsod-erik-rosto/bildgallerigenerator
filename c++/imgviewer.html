@@ -2,23 +2,157 @@
 <head>
 <title>Image viewer</title>
 <LINK href='imgviewer.css' rel='stylesheet' type='text/css'>
+<script src='imageviewer.js' type='text/javascript'></script>
 <div id='Head'>
-<h1 id='lrgtxt'>Image viewer<h1><p id='cooldot'>.<p>
+<p id='lrgtxt'>image viewer.</p>
 </div>
 </head>
 <body>
+
+<SCRIPT type='text/javascript'>
+function imgunclick(image)
+{
+if (document.getElementById(image).style.width > '260px')
+{
+document.getElementById(image).src='thumbnails/'+image;
+document.getElementById(image).style.width = '92px';
+document.getElementById(image).style.borderColor = 'white';
+document.getElementById('images').style.width = '220px';
+document.getElementById(image).style.height = '92px';
+}
+}
+function imgclick(image)
+{
+document.getElementById(image).src='images/'+image;
+document.getElementById(image).style.width='300px';
+document.getElementById(image).style.borderColor = 'white';
+document.getElementById('images').style.width = '512';
+document.getElementById(image).style.height='500px';
+}
+</SCRIPT>
+
 <div id='images'>
-<a href='images/cat.png'> <img src='images/cat.png 'alt='0' height='92' width='92' title='cat.png'></a>
-<a href='images/catrotated.jpg'> <img src='images/catrotated.jpg 'alt='1' height='92' width='92' title='catrotated.jpg'></a>
-<a href='images/crazyseal.jpg'> <img src='images/crazyseal.jpg 'alt='2' height='92' width='92' title='crazyseal.jpg'></a>
-<a href='images/erns.png'> <img src='images/erns.png 'alt='3' height='92' width='92' title='erns.png'></a>
-<a href='images/ernst.png'> <img src='images/ernst.png 'alt='4' height='92' width='92' title='ernst.png'></a>
-<a href='images/ernste.png'> <img src='images/ernste.png 'alt='5' height='92' width='92' title='ernste.png'></a>
-<a href='images/ernstu.png'> <img src='images/ernstu.png 'alt='6' height='92' width='92' title='ernstu.png'></a>
-<a href='images/ernstuu.png'> <img src='images/ernstuu.png 'alt='7' height='92' width='92' title='ernstuu.png'></a>
-<a href='images/ernstuuu.png'> <img src='images/ernstuuu.png 'alt='8' height='92' width='92' title='ernstuuu.png'></a>
-<a href='images/ernstuuuu.png'> <img src='images/ernstuuuu.png 'alt='9' height='92' width='92' title='ernstuuuu.png'></a>
-<a href='images/finasiat.jpg'> <img src='images/finasiat.jpg 'alt='10' height='92' width='92' title='finasiat.jpg'></a>
+<img class = 'imgs' id = 'cat.png' 
+onClick = "imgclick('cat.png')" 
+onmouseout = "imgunclick('cat.png')" 
+src = 'thumbnails/cat.png' 
+alt = 'Missing image'>
+
+<img class = 'imgs' id = 'catrotated.jpg' 
+onClick = "imgclick('catrotated.jpg')" 
+onmouseout = "imgunclick('catrotated.jpg')" 
+src = 'thumbnails/catrotated.jpg' 
+alt = 'Missing image'>
+
+<img class = 'imgs' id = 'crazyseal.jpg' 
+onClick = "imgclick('crazyseal.jpg')" 
+onmouseout = "imgunclick('crazyseal.jpg')" 
+src = 'thumbnails/crazyseal.jpg' 
+alt = 'Missing image'>
+
+<img class = 'imgs' id = 'dsc_0063.jpg' 
+onClick = "imgclick('dsc_0063.jpg')" 
+onmouseout = "imgunclick('dsc_0063.jpg')" 
+src = 'thumbnails/dsc_0063.jpg' 
+alt = 'Missing image'>
+
+<img class = 'imgs' id = 'erns.png' 
+onClick = "imgclick('erns.png')" 
+onmouseout = "imgunclick('erns.png')" 
+src = 'thumbnails/erns.png' 
+alt = 'Missing image'>
+
+<img class = 'imgs' id = 'ernst.jpg' 
+onClick = "imgclick('ernst.jpg')" 
+onmouseout = "imgunclick('ernst.jpg')" 
+src = 'thumbnails/ernst.jpg' 
+alt = 'Missing image'>
+
+<img class = 'imgs' id = 'ernst.png' 
+onClick = "imgclick('ernst.png')" 
+onmouseout = "imgunclick('ernst.png')" 
+src = 'thumbnails/ernst.png' 
+alt = 'Missing image'>
+
+<img class = 'imgs' id = 'ERNST440.jpg' 
+onClick = "imgclick('ERNST440.jpg')" 
+onmouseout = "imgunclick('ERNST440.jpg')" 
+src = 'thumbnails/ERNST440.jpg' 
+alt = 'Missing image'>
+
+<img class = 'imgs' id = 'ernste.png' 
+onClick = "imgclick('ernste.png')" 
+onmouseout = "imgunclick('ernste.png')" 
+src = 'thumbnails/ernste.png' 
+alt = 'Missing image'>
+
+<img class = 'imgs' id = 'ernstseal.png' 
+onClick = "imgclick('ernstseal.png')" 
+onmouseout = "imgunclick('ernstseal.png')" 
+src = 'thumbnails/ernstseal.png' 
+alt = 'Missing image'>
+
+<img class = 'imgs' id = 'ernstu.png' 
+onClick = "imgclick('ernstu.png')" 
+onmouseout = "imgunclick('ernstu.png')" 
+src = 'thumbnails/ernstu.png' 
+alt = 'Missing image'>
+
+<img class = 'imgs' id = 'ernstuu.png' 
+onClick = "imgclick('ernstuu.png')" 
+onmouseout = "imgunclick('ernstuu.png')" 
+src = 'thumbnails/ernstuu.png' 
+alt = 'Missing image'>
+
+<img class = 'imgs' id = 'ernstuuu.png' 
+onClick = "imgclick('ernstuuu.png')" 
+onmouseout = "imgunclick('ernstuuu.png')" 
+src = 'thumbnails/ernstuuu.png' 
+alt = 'Missing image'>
+
+<img class = 'imgs' id = 'ernstuuuu.png' 
+onClick = "imgclick('ernstuuuu.png')" 
+onmouseout = "imgunclick('ernstuuuu.png')" 
+src = 'thumbnails/ernstuuuu.png' 
+alt = 'Missing image'>
+
+<img class = 'imgs' id = 'finasiat.jpg' 
+onClick = "imgclick('finasiat.jpg')" 
+onmouseout = "imgunclick('finasiat.jpg')" 
+src = 'thumbnails/finasiat.jpg' 
+alt = 'Missing image'>
+
+<img class = 'imgs' id = 'Larvitar.JPG' 
+onClick = "imgclick('Larvitar.JPG')" 
+onmouseout = "imgunclick('Larvitar.JPG')" 
+src = 'thumbnails/Larvitar.JPG' 
+alt = 'Missing image'>
+
+<img class = 'imgs' id = 'legolas.jpg' 
+onClick = "imgclick('legolas.jpg')" 
+onmouseout = "imgunclick('legolas.jpg')" 
+src = 'thumbnails/legolas.jpg' 
+alt = 'Missing image'>
+
+<img class = 'imgs' id = 'seal-picture.jpg' 
+onClick = "imgclick('seal-picture.jpg')" 
+onmouseout = "imgunclick('seal-picture.jpg')" 
+src = 'thumbnails/seal-picture.jpg' 
+alt = 'Missing image'>
+
+<img class = 'imgs' id = 'Säl01.jpg' 
+onClick = "imgclick('Säl01.jpg')" 
+onmouseout = "imgunclick('Säl01.jpg')" 
+src = 'thumbnails/Säl01.jpg' 
+alt = 'Missing image'>
+
+<img class = 'imgs' id = 'tumblr_lvxajfqakT1qzct53o1_1280.jpg' 
+onClick = "imgclick('tumblr_lvxajfqakT1qzct53o1_1280.jpg')" 
+onmouseout = "imgunclick('tumblr_lvxajfqakT1qzct53o1_1280.jpg')" 
+src = 'thumbnails/tumblr_lvxajfqakT1qzct53o1_1280.jpg' 
+alt = 'Missing image'>
+
 </div>
-<p id='imgamount'> 12 images. </p> 
-</body></html>
+<p id='imgamount'> 20 images. </p> 
+</body>
+</html>

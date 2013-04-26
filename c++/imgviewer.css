@@ -1,53 +1,61 @@
 body
 {
 font-family:'Century Gothic';
+background-color: black; 
 background: url('background.png');
+width: 100%;
+height: 100%;
 }
 
 div#images
 {
+color: white; 
 position: absolute;
 align: center;
-top: 20%;
+margin-top: 3%;
+padding-top: 3%;
+padding-bottom: 3%; 
 left: 45%; 
 width: 220px; 
 background-color: rgb(10, 10, 10);
 border-style: solid; border-color: rgb(25, 25, 25); border-width: 2px; 
 }
 
-div#Head
+.imgs
 {
-width: 99%;
-height: 60px;
-background-color: rgb(20, 20, 20);
-border-style: solid;
-border-color: rgb(120, 120, 120);
-border-width: 3px;
+height: 92;
+width: 92;
 }
 
 p#imgamount
 {
-position: absolute;
-left: 45%; 
-bottom: 78%;
 color: white;
+z-index: -1;
+}
+
+div#Head
+{
+width: 93%;
+height: 60px;
+padding-bottom: 2%; 
+padding-left: 6%; 
+background-color: rgb(20, 20, 20);
+border-style: solid;
+font-size: 30px; 
+border-color: rgb(120, 120, 120);
+border-width: 3px;
 }
 
 p#cooldot
 {
-position: absolute;
-left: 21%; 
 font-family:'Century Gothic';
-bottom: 86.5%;
 color: red;
+height: 30px;
 }
 
-h1#lrgtxt
+p#lrgtxt
 {
-position: absolute;
-left: 5%; 
 font-family:'Century Gothic';
-bottom: 88%;
 color: white;
 }
 
@@ -57,7 +65,7 @@ margin-left: 7px;
 border-style: outset;
 top: 10%; 
 border-width: 3px;
-border-color: white;
+border-color: rgb(150, 20, 20);
 }
 
 img:hover
@@ -67,6 +75,6 @@ border-width: 4mpx;
 postion: absolute; 
 width: 92px;
 height: 92px;
-border-color: blue;
+border-color: white;
 }
 

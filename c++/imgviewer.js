@@ -1,5 +1,5 @@
 function imgclick()
 {
-	document.getElementById("images").style.width="2000px";
+	document.getElementById('lrgtxt').style.color='red';
 }
-document.getElementById("images").click(imgclick);
+document.getElementById('lrgtxt').click(imgclick);
